@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+:root{--ink:#172033;--muted:#667085;--paper:#f5f7fb;--purple:#6757d9;--light:#efedff;--line:#e7e9f2}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;line-height:1.6}
+.hero{padding:54px 20px 42px;text-align:center;color:white;background:linear-gradient(135deg,#28245f,#6757d9 65%,#927eea)}
+.hero .eyebrow{color:#d8d3ff}
+h1,h2{font-family:'Space Grotesk',sans-serif;line-height:1.2}
+h1{margin:0;font-size:clamp(2rem,5vw,3.2rem)}
+.hero>p:last-child{color:#e7e4ff;margin:12px 0 0}
+.eyebrow{margin:0 0 8px;color:var(--purple);font-size:.72rem;font-weight:700;letter-spacing:.13em}
+.container{width:min(900px,calc(100% - 32px));margin:30px auto 50px}
+.card{margin:18px 0;padding:26px;border:1px solid var(--line);border-radius:18px;background:white;box-shadow:0 8px 28px #1f254c0b}
+.intro{display:flex;align-items:center;gap:22px}
+.avatar{display:grid;flex:0 0 76px;width:76px;height:76px;place-items:center;border-radius:22px;background:var(--light);color:var(--purple);font-size:2rem}
+h2{margin:0 0 14px;font-size:1.45rem}
+.intro h2 span{color:var(--purple)}
+.muted{color:var(--muted)}
+.intro .muted{margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.item{padding:15px;border:1px solid var(--line);border-radius:12px}
+.item small{display:block;margin-bottom:4px;color:var(--muted)}
+.item strong{font-size:.98rem}
+.note{margin:16px 0 0;font-size:.9rem}
+.mission{background:#f0efff;border-color:#dfdcff}
+.mission>p:not(.eyebrow){color:#555579}
+.steps{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+.steps span{padding:8px 12px;border-radius:9px;background:white;color:#4d438f;font-size:.83rem;font-weight:600}
+code{padding:2px 5px;border-radius:5px;background:var(--light);color:#5143b5}
+footer{padding:20px;color:var(--muted);text-align:center;font-size:.85rem}
+.demo{display:block;margin:0 auto 30px;padding:12px 18px;border:0;border-radius:10px;background:var(--ink);color:white;font:inherit;font-weight:600;cursor:pointer}
+.demo:hover{background:var(--purple)}
+@media(max-width:600px){.hero{padding:42px 18px 34px}.card{padding:20px}.intro{align-items:flex-start;gap:14px}.avatar{flex-basis:56px;width:56px;height:56px;border-radius:16px}.grid{grid-template-columns:1fr}}
